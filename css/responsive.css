@@ -1,0 +1,118 @@
+/* ═══════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS — MOBILE OPTIMIZED
+   ═══════════════════════════════════════════ */
+
+/* ── TABLET (max 1024px) ── */
+@media(max-width:1024px){
+  .hero-image{width:50%;opacity:0.5}
+  .section-dots{display:none}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .about-grid{gap:40px}
+  .hero-content{max-width:520px}
+}
+
+/* ── MOBILE LANDSCAPE / SMALL TABLET (max 768px) ── */
+@media(max-width:768px){
+  /* Navbar */
+  .nav-links,.nav-right .lang-wrapper{display:none}
+  .hamburger{display:flex}
+  #navbar{height:64px;padding:0 4%}
+  .nav-logo-img{height:36px}
+  .btn-quote{padding:10px 16px;font-size:11px;letter-spacing:0.04em}
+
+  /* Hero */
+  .hero-content{left:5%;right:5%;max-width:90%;transform:translateY(-50%)}
+  .hero-headline{font-size:clamp(2.8rem,10vw,4.5rem);line-height:0.95}
+  .hero-subtext{font-size:0.9rem;max-width:100%;margin-top:16px}
+  .hero-badge{font-size:10px;padding:5px 12px;margin-top:0}
+  .hero-ctas{flex-direction:column;gap:10px;margin-top:24px}
+  .hero-ctas .btn{width:100%;justify-content:center;padding:14px 24px;font-size:13px}
+  .hero-route-line{margin-top:20px}
+  .hero-route-line .line-segment{width:120px}
+  .hero-image{width:100%;opacity:0.15;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.3) 50%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.3) 50%,transparent 100%)}
+  .hero-glow{background:radial-gradient(ellipse at 50% 50%,rgba(255,107,0,0.08) 0%,transparent 70%)}
+  #hero{min-height:600px}
+
+  /* Watch Intro */
+  .watch-intro{bottom:52px;right:16px;gap:8px}
+  .watch-intro .play-circle{width:40px;height:40px}
+  .watch-intro .play-text{font-size:10px}
+
+  /* Sections */
+  .section{padding:80px 4%}
+  .section-title{font-size:clamp(2rem,6vw,3rem)}
+  .section-label{font-size:11px;margin-bottom:12px}
+  .section-desc{font-size:0.9rem}
+
+  /* About */
+  .about-grid{gap:32px;margin-top:40px}
+  .about-text p{font-size:0.9rem;margin-bottom:16px}
+  .about-features{grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+  .about-carousel{aspect-ratio:16/10}
+  .orbit-ring,.orbit-plane{display:none}
+  .about-flight-paths{opacity:0.5}
+  .carousel-controls{bottom:12px;right:12px}
+  .carousel-btn{width:28px;height:28px;font-size:16px}
+
+  /* Stats */
+  .stats-grid{grid-template-columns:1fr 1fr;gap:24px}
+  .stat-item .stat-number{font-size:clamp(2rem,8vw,3rem)}
+  .stat-item .stat-label{font-size:11px;letter-spacing:0.1em}
+
+  /* Contact */
+  .contact-grid{gap:40px;margin-top:40px}
+  .form-row{grid-template-columns:1fr}
+  .form-group input,.form-group textarea,.form-group select{padding:12px 14px;font-size:14px}
+  .btn-submit{width:100%;padding:14px 24px}
+  .contact-card{padding:20px 18px}
+  .contact-card h4{font-size:1rem}
+  .contact-card p{font-size:0.85rem}
+
+  /* Ticker */
+  .hero-ticker{height:30px}
+  .ticker-item{font-size:10px;padding:0 24px}
+
+  /* Live Planes */
+  .live-planes{display:none}
+
+  /* Footer */
+  .footer-grid{grid-template-columns:1fr;gap:28px;text-align:center}
+  .footer-brand p{max-width:100%;margin:0 auto}
+  .footer-brand .footer-logo-img{margin:0 auto}
+  .footer-bottom{flex-direction:column;text-align:center;gap:12px}
+  .footer-bottom .socials{justify-content:center}
+  #footer{padding:40px 4% 24px}
+}
+
+/* ── SMALL MOBILE (max 480px) ── */
+@media(max-width:480px){
+  .hero-headline{font-size:clamp(2.4rem,9vw,3.2rem)}
+  .hero-subtext{font-size:0.85rem}
+  .hero-badge{font-size:9px;padding:4px 10px;letter-spacing:0.15em}
+  .hero-ctas .btn{padding:12px 20px;font-size:12px}
+  .section{padding:60px 4%}
+  .section-title{font-size:clamp(1.8rem,7vw,2.5rem)}
+  .about-features{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .stat-item .stat-number{font-size:2.2rem}
+  .stat-item .stat-label{font-size:10px}
+  .watch-intro .play-text{display:none}
+  .btn-quote{padding:8px 14px;font-size:10px}
+  #navbar{height:58px}
+  .nav-logo-img{height:32px}
+  .carousel-btn{width:26px;height:26px;font-size:14px}
+  .carousel-dots .c-dot{width:5px;height:5px}
+  .contact-card h4{font-size:0.95rem}
+  .footer-col a{font-size:0.8rem;padding:3px 0}
+}
+
+/* ── VERY SMALL MOBILE (max 375px) ── */
+@media(max-width:375px){
+  .hero-headline{font-size:2.6rem}
+  .hero-badge{font-size:9px;padding:4px 10px}
+  .hero-route-line{display:none}
+  .section-title{font-size:1.6rem}
+  #hero{min-height:550px}
+}

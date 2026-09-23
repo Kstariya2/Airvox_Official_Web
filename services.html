@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — AIRVOX LOGISTICS</title>
+<meta name="description" content="End-to-end logistics solutions: air freight, ocean shipping, land transport, warehousing, supply chain, customs brokerage and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<link rel="stylesheet" href="css/style.css?v=9">
+<link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR (Solid from start on services page)
+     ═══════════════════════════════════════════ -->
+<header id="navbar" class="scrolled">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo_hq.png" alt="AIRVOX LOGISTICS" class="nav-logo-img">
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="index.html#about" data-i18n="nav.about">About</a>
+    <a href="services.html" class="active" data-i18n="nav.services">Services</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <button class="lang-selector">EN ▾</button>
+    <a href="contact.html" class="btn-quote"><span data-i18n="nav.quote.freight">GET A FREIGHT QUOTE</span> <span class="arrow">→</span></a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="index.html#about" data-i18n="nav.about">About</a>
+  <a href="services.html" data-i18n="nav.services">Services</a>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 01 — PAGE HERO
+     ═══════════════════════════════════════════ -->
+<section id="svc-hero">
+  <!-- Layer 1: Base color is section background -->
+  <!-- Layer 2: Hero image -->
+  <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1920&q=80" alt="Logistics" class="svc-hero-img" loading="eager">
+  <!-- Layer 3: Gradient overlay -->
+  <div class="svc-hero-gradient"></div>
+  <!-- Layer 4: Animated grid lines -->
+  <div class="svc-hero-grid"></div>
+  <!-- Layer 5: Orange radial glow -->
+  <div class="svc-hero-glow"></div>
+
+  <!-- Hero Content -->
+  <div class="svc-hero-content">
+    <div class="svc-breadcrumb">
+      <a href="index.html" data-i18n="svc.hero.breadcrumb.home">HOME</a>
+      <span class="sep">/</span>
+      <span class="current" data-i18n="svc.hero.breadcrumb.services">SERVICES</span>
+    </div>
+
+    <div class="svc-badge" data-i18n="svc.hero.badge">✦  OUR SERVICES  ✦</div>
+
+    <h1 class="svc-headline">
+      <span class="svc-line svc-line-1" data-i18n="svc.hero.line1">END-TO-END</span>
+      <span class="svc-line svc-line-2" data-i18n="svc.hero.line2">LOGISTICS SOLUTIONS</span>
+    </h1>
+
+    <p class="svc-subtext" data-i18n="svc.hero.subtext">From air freight to ocean shipping, land transport to warehousing — every solution tailored for your business.</p>
+
+    <div class="svc-scroll-hint">
+      <div class="scroll-line"></div>
+      <svg width="12" height="8" viewBox="0 0 12 8"><path d="M1 1l5 5 5-5" stroke="rgba(255,107,0,0.5)" stroke-width="1.5" fill="none"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 02 — SERVICES INTRO STRIP
+     ═══════════════════════════════════════════ -->
+<div class="svc-intro-strip svc-reveal">
+  <span class="svc-strip-text" data-i18n="svc.strip">8 SPECIALIZED SERVICES <span class="dot-sep">·</span> GLOBAL REACH <span class="dot-sep">·</span> 120+ COUNTRIES</span>
+  <div class="svc-filter" data-i18n="svc.filter">ALL SERVICES <span class="filter-arrow">▾</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 03 — SERVICES GRID
+     ═══════════════════════════════════════════ -->
+<section class="svc-grid-section">
+  <div class="svc-grid">
+
+    <!-- Card 01: Air Freight -->
+    <div class="svc-card svc-card-reveal">
+      <img src="https://images.unsplash.com/photo-1559060017-445fb9722f2a?auto=format&fit=crop&w=600&q=75" alt="Air Freight" class="card-img" loading="lazy">
+      <div class="card-gradient"></div>
+      <span class="card-number">01</span>
+      <div class="card-content">
+        <svg class="card-icon" viewBox="0 0 24 24" width="36" height="36"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" fill="currentColor"/></svg>
+        <h3 class="card-title" data-i18n="svc.air.title">Air Freight</h3>
+        <span class="card-tag" data-i18n="svc.air.tag">WORLDWIDE · EXPRESS DELIVERY</span>
+        <div class="accent-line"></div>
+        <div class="card-hover-content">
+          <p class="card-desc" data-i18n="svc.air.desc">Priority air cargo solutions with guaranteed transit times across 180+ countries. From perishables to oversized freight.</p>
+          <div class="card-features">
+            <span data-i18n="svc.air.f1">→ Next-day & 48hr express options</span>
+            <span data-i18n="svc.air.f2">→ Temperature-controlled cargo</span>
+            <span data-i18n="svc.air.f3">→ Dangerous goods certified</span>
+          </div>
+          <a href="contact.html" class="card-cta"><span data-i18n="svc.card.cta">LEARN MORE</span> <span class="cta-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 02: Ocean Freight -->
+    <div class="svc-card svc-card-reveal">
+      <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=75" alt="Ocean Freight" class="card-img" loading="lazy">
+      <div class="card-gradient"></div>
+      <span class="card-number">02</span>
+      <div class="card-content">
+        <svg class="card-icon" viewBox="0 0 24 24" width="36" height="36"><path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.34-.42-.6-.5L20 10.62V6c0-1.1-.9-2-2-2h-3V1H9v3H6c-1.1 0-2 .9-2 2v4.62l-1.29.42c-.26.08-.48.26-.6.5s-.14.52-.05.78L3.95 19zM6 6h12v3.97L12 8 6 9.97V6z" fill="currentColor"/></svg>
+        <h3 class="card-title" data-i18n="svc.ocean.title">Ocean Freight</h3>
+        <span class="card-tag" data-i18n="svc.ocean.tag">GLOBAL · FCL & LCL</span>
+        <div class="accent-line"></div>
+        <div class="card-hover-content">
+          <p class="card-desc" data-i18n="svc.ocean.desc">Full container and less-than-container load services across all major trade lanes. Competitive rates, reliable scheduling.</p>
+          <div class="card-features">
+            <span data-i18n="svc.ocean.f1">→ FCL & LCL consolidation</span>
+            <span data-i18n="svc.ocean.f2">→ Reefer container solutions</span>
+            <span data-i18n="svc.ocean.f3">→ Port-to-port & door-to-door</span>
+          </div>
+          <a href="contact.html" class="card-cta"><span data-i18n="svc.card.cta">LEARN MORE</span> <span class="cta-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 03: Land Transport -->
+    <div class="svc-card svc-card-reveal">
+      <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=75" alt="Land Transport" class="card-img" loading="lazy">
+      <div class="card-gradient"></div>
+      <span class="card-number">03</span>
+      <div class="card-content">
+        <svg class="card-icon" viewBox="0 0 24 24" width="36" height="36"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" fill="currentColor"/></svg>
+        <h3 class="card-title" data-i18n="svc.land.title">Land Transport</h3>
+        <span class="card-tag" data-i18n="svc.land.tag">FTL · LTL · CROSS-BORDER</span>
+        <div class="accent-line"></div>
+        <div class="card-hover-content">
+          <p class="card-desc" data-i18n="svc.land.desc">Full truckload and less-than-truckload services with real-time GPS tracking. Cross-border expertise across continents.</p>
+          <div class="card-features">
+            <span data-i18n="svc.land.f1">→ FTL & LTL nationwide coverage</span>
+            <span data-i18n="svc.land.f2">→ Real-time GPS tracking</span>
+            <span data-i18n="svc.land.f3">→ Cross-border documentation</span>
+          </div>
+          <a href="contact.html" class="card-cta"><span data-i18n="svc.card.cta">LEARN MORE</span> <span class="cta-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 04: Warehousing -->
+    <div class="svc-card svc-card-reveal">
+      <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=75" alt="Warehousing" class="card-img" loading="lazy">
+      <div class="card-gradient"></div>
+      <span class="card-number">04</span>
+      <div class="card-content">
+        <svg class="card-icon" viewBox="0 0 24 24" width="36" height="36"><path d="M22 21V7L12 2 2 7v14h5v-9h10v9h5zm-11-2H9v2h2v-2zm2-3h-2v2h2v-2zm2 3h-2v2h2v-2z" fill="currentColor"/></svg>
+        <h3 class="card-title" data-i18n="svc.wh.title">Warehousing</h3>
+        <span class="card-tag" data-i18n="svc.wh.tag">SMART STORAGE · FULFILLMENT</span>
+        <div class="accent-line"></div>
+        <div class="card-hover-content">
+          <p class="card-desc" data-i18n="svc.wh.desc">State-of-the-art warehousing with WMS integration. Pick, pack and ship with full inventory visibility.</p>
+          <div class="card-features">
+            <span data-i18n="svc.wh.f1">→ Climate-controlled facilities</span>
+            <span data-i18n="svc.wh.f2">→ WMS & barcode integration</span>
+            <span data-i18n="svc.wh.f3">→ Order fulfillment & returns</span>
+          </div>
+          <a href="contact.html" class="card-cta"><span data-i18n="svc.card.cta">LEARN MORE</span> <span class="cta-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 05: Supply Chain -->
+    <div class="svc-card svc-card-reveal">
+      <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=75" alt="Supply Chain" class="card-img" loading="lazy">
+      <div class="card-gradient"></div>
+      <span class="card-number">05</span>
+      <div class="card-content">
+        <svg class="card-icon" viewBox="0 0 24 24" width="36" height="36"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="currentColor"/></svg>
+        <h3 class="card-title" data-i18n="svc.sc.title">Supply Chain</h3>
+        <span class="card-tag" data-i18n="svc.sc.tag">END-TO-END · OPTIMIZATION</span>
+        <div class="accent-line"></div>
+        <div class="card-hover-content">
+          <p class="card-desc" data-i18n="svc.sc.desc">Complete supply chain design and management. From procurement to last-mile delivery, we optimize every touchpoint.</p>
+          <div class="card-features">
+            <span data-i18n="svc.sc.f1">→ Supply chain consulting</span>
+            <span data-i18n="svc.sc.f2">→ Vendor management & PO</span>
+            <span data-i18n="svc.sc.f3">→ KPI dashboards & analytics</span>
+          </div>
+          <a href="contact.html" class="card-cta"><span data-i18n="svc.card.cta">LEARN MORE</span> <span class="cta-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 06: Customs Brokerage -->
+    <div class="svc-card svc-card-reveal">
+      <img src="https://images.unsplash.com/photo-1559060017-445fb9722f2a?auto=format&fit=crop&w=600&q=75" alt="Customs Brokerage" class="card-img" loading="lazy">
+      <div class="card-gradient"></div>
+      <span class="card-number">06</span>
+      <div class="card-content">
+        <svg class="card-icon" viewBox="0 0 24 24" width="36" height="36"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" fill="currentColor"/></svg>
+        <h3 class="card-title" data-i18n="svc.customs.title">Customs Brokerage</h3>
+        <span class="card-tag" data-i18n="svc.customs.tag">COMPLIANCE · CLEARANCE</span>
+        <div class="accent-line"></div>
+        <div class="card-hover-content">
+          <p class="card-desc" data-i18n="svc.customs.desc">Licensed customs brokers in 120+ countries. We handle all documentation, duties, and regulatory compliance.</p>
+          <div class="card-features">
+            <span data-i18n="svc.customs.f1">→ HS code classification</span>
+            <span data-i18n="svc.customs.f2">→ Duty & tax optimization</span>
+            <span data-i18n="svc.customs.f3">→ Regulatory compliance audit</span>
+          </div>
+          <a href="contact.html" class="card-cta"><span data-i18n="svc.card.cta">LEARN MORE</span> <span class="cta-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 07: Project Cargo -->
+    <div class="svc-card svc-card-reveal">
+      <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=75" alt="Project Cargo" class="card-img" loading="lazy">
+      <div class="card-gradient"></div>
+      <span class="card-number">07</span>
+      <div class="card-content">
+        <svg class="card-icon" viewBox="0 0 24 24" width="36" height="36"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z" fill="currentColor"/></svg>
+        <h3 class="card-title" data-i18n="svc.project.title">Project Cargo</h3>
+        <span class="card-tag" data-i18n="svc.project.tag">OVERSIZED · HEAVY LIFT</span>
+        <div class="accent-line"></div>
+        <div class="card-hover-content">
+          <p class="card-desc" data-i18n="svc.project.desc">Specialized handling for oversized, overweight, and high-value cargo. Full project management from survey to delivery.</p>
+          <div class="card-features">
+            <span data-i18n="svc.project.f1">→ Route survey & planning</span>
+            <span data-i18n="svc.project.f2">→ Heavy lift & breakbulk</span>
+            <span data-i18n="svc.project.f3">→ Multi-modal coordination</span>
+          </div>
+          <a href="contact.html" class="card-cta"><span data-i18n="svc.card.cta">LEARN MORE</span> <span class="cta-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 08: E-Commerce Logistics -->
+    <div class="svc-card svc-card-reveal">
+      <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=75" alt="E-Commerce" class="card-img" loading="lazy">
+      <div class="card-gradient"></div>
+      <span class="card-number">08</span>
+      <div class="card-content">
+        <svg class="card-icon" viewBox="0 0 24 24" width="36" height="36"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/></svg>
+        <h3 class="card-title" data-i18n="svc.ecom.title">E-Commerce Logistics</h3>
+        <span class="card-tag" data-i18n="svc.ecom.tag">D2C · CROSS-BORDER · FULFILLMENT</span>
+        <div class="accent-line"></div>
+        <div class="card-hover-content">
+          <p class="card-desc" data-i18n="svc.ecom.desc">Integrated e-commerce fulfillment with multi-channel support. From marketplace to customer doorstep, globally.</p>
+          <div class="card-features">
+            <span data-i18n="svc.ecom.f1">→ Multi-platform integration</span>
+            <span data-i18n="svc.ecom.f2">→ Returns management</span>
+            <span data-i18n="svc.ecom.f3">→ Cross-border e-commerce</span>
+          </div>
+          <a href="contact.html" class="card-cta"><span data-i18n="svc.card.cta">LEARN MORE</span> <span class="cta-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CTA BANNER
+     ═══════════════════════════════════════════ -->
+<section class="svc-cta-banner svc-reveal">
+  <div class="svc-cta-inner">
+    <div class="svc-cta-text">
+      <div class="section-label" data-i18n="svc.cta.label">Ready to Ship?</div>
+      <h2 class="section-title"><span data-i18n="svc.cta.title1">GET A CUSTOM</span> <span class="orange" data-i18n="svc.cta.title2">QUOTE</span></h2>
+      <p class="section-desc" data-i18n="svc.cta.desc">Our logistics specialists will design the optimal solution for your cargo within 2 hours.</p>
+    </div>
+    <div class="svc-cta-actions">
+      <a href="contact.html" class="btn-primary"><span data-i18n="svc.cta.btn1">REQUEST A QUOTE</span> <span class="arrow">→</span></a>
+      <a href="tel:+97145550100" class="btn-secondary"><span data-i18n="svc.cta.btn2">CALL US NOW</span> <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="assets/logo_hq.png" alt="AIRVOX LOGISTICS" class="footer-logo-img">
+      </div>
+      <p data-i18n="footer.desc.alt">Moving the world without limits. Your trusted partner for international freight forwarding and supply chain solutions since 2004.</p>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="footer.services">Services</h5>
+      <a href="services.html" data-i18n="svc.air.title">Air Freight</a><a href="services.html" data-i18n="svc.ocean.title">Ocean Freight</a><a href="services.html" data-i18n="svc.land.title">Land Transport</a><a href="services.html" data-i18n="svc.wh.title">Warehousing</a><a href="services.html" data-i18n="svc.sc.title">Supply Chain</a><a href="services.html" data-i18n="svc.customs.title">Customs Brokerage</a>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="footer.company">Company</h5>
+      <a href="index.html#about" data-i18n="footer.about">About Us</a><a href="#" data-i18n="footer.careers">Careers</a><a href="#" data-i18n="footer.news">News</a><a href="#" data-i18n="footer.sustainability">Sustainability</a><a href="#" data-i18n="footer.partners">Partners</a>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="footer.support">Support</h5>
+      <a href="contact.html" data-i18n="footer.getquote">Get a Quote</a><a href="#" data-i18n="footer.faq">FAQ</a><a href="#" data-i18n="footer.docs">Documentation</a><a href="#" data-i18n="footer.terms">Terms & Conditions</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="footer.copyright">© 2026 AIRVOX LOGISTICS. All rights reserved.</p>
+    <div class="socials">
+      <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+      <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.85.38-1.78.64-2.73.76 1-.6 1.76-1.54 2.12-2.67-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.81 2.16-4.81 4.81 0 .38.04.75.13 1.1-4-.2-7.58-2.11-9.96-5.02-.42.72-.66 1.56-.66 2.46 0 1.68.85 3.16 2.14 4.02-.79-.02-1.53-.24-2.18-.6v.06c0 2.35 1.67 4.31 3.88 4.76-.4.1-.83.16-1.27.16-.31 0-.62-.03-.92-.08.63 1.96 2.45 3.39 4.61 3.43-1.69 1.32-3.83 2.1-6.15 2.1-.4 0-.8-.02-1.19-.07 2.19 1.4 4.78 2.22 7.57 2.22 9.07 0 14.02-7.52 14.02-14.02 0-.21 0-.42-.01-.63.96-.69 1.79-1.56 2.45-2.55z"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.93 3.78-3.93 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 008.44-9.9c0-5.53-4.5-10.02-10-10.02z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- JS Modules -->
+<script src="js/main.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/services.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/translations.js?v=2"></script>
+
+<div class="floating-btns">
+  <a href="tel:+919311060756" class="float-btn float-call">
+    <div class="float-icon">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="#FF6B00">
+        <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C9.6 21 3 14.4 3 6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+      </svg>
+    </div>
+    <span>+91 93110 60756</span>
+  </a>
+  <a href="https://wa.me/919311060756" target="_blank" rel="noopener" class="float-btn float-whatsapp">
+    <div class="float-icon">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </div>
+    <span>WhatsApp Us</span>
+  </a>
+</div>
+</body>
+</html>

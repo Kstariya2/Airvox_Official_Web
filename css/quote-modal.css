@@ -1,0 +1,209 @@
+/* ═══════════════════════════════════════════
+   QUOTE MODAL — Success & Error Popups
+   Airvox Branding: Navy + Orange
+   ═══════════════════════════════════════════ */
+
+/* Overlay */
+.quote-modal-overlay{
+  position:fixed;inset:0;z-index:9999;
+  background:rgba(5,11,24,0.85);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;
+  transition:all 0.35s ease;
+  padding:20px;
+}
+.quote-modal-overlay.active{opacity:1;visibility:visible}
+
+/* Modal Card */
+.quote-modal{
+  background:#0A1628;
+  border:1px solid rgba(255,107,0,0.2);
+  border-radius:16px;
+  max-width:480px;width:100%;
+  padding:48px 40px;
+  text-align:center;
+  transform:scale(0.9) translateY(20px);
+  transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+  box-shadow:0 25px 80px rgba(0,0,0,0.6),0 0 60px rgba(255,107,0,0.08);
+  position:relative;
+  overflow:hidden;
+}
+.quote-modal-overlay.active .quote-modal{transform:scale(1) translateY(0)}
+
+/* Glow line at top */
+.quote-modal::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent,#FF6B00,transparent);
+}
+
+/* Icon */
+.quote-modal-icon{
+  width:80px;height:80px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 24px;
+  font-size:36px;
+  position:relative;
+}
+.quote-modal-icon.success{
+  background:rgba(34,197,94,0.1);
+  border:2px solid rgba(34,197,94,0.3);
+  color:#22C55E;
+  animation:iconPop 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.2s both;
+}
+.quote-modal-icon.error{
+  background:rgba(239,68,68,0.1);
+  border:2px solid rgba(239,68,68,0.3);
+  color:#EF4444;
+  animation:iconPop 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.2s both;
+}
+@keyframes iconPop{
+  0%{transform:scale(0);opacity:0}
+  100%{transform:scale(1);opacity:1}
+}
+
+/* Pulse ring for success */
+.quote-modal-icon.success::after{
+  content:'';position:absolute;inset:-8px;
+  border-radius:50%;
+  border:2px solid rgba(34,197,94,0.3);
+  animation:pulseRing 2s ease-out infinite;
+}
+@keyframes pulseRing{
+  0%{transform:scale(1);opacity:0.6}
+  100%{transform:scale(1.4);opacity:0}
+}
+
+/* Title */
+.quote-modal-title{
+  font-family:var(--font-display, 'Barlow Condensed', sans-serif);
+  font-weight:800;font-size:28px;
+  letter-spacing:0.04em;
+  margin:0 0 8px;
+  text-transform:uppercase;
+}
+.quote-modal-title.success{color:#22C55E}
+.quote-modal-title.error{color:#EF4444}
+
+/* Subtitle */
+.quote-modal-subtitle{
+  font-family:var(--font-body, 'Inter', sans-serif);
+  font-weight:500;font-size:16px;
+  color:var(--orange-primary,#FF6B00);
+  margin:0 0 20px;
+  letter-spacing:0.02em;
+}
+
+/* Message */
+.quote-modal-message{
+  font-family:var(--font-body, 'Inter', sans-serif);
+  font-weight:400;font-size:14px;
+  color:rgba(248,250,252,0.6);
+  line-height:1.7;
+  margin:0 0 32px;
+}
+
+/* Button */
+.quote-modal-btn{
+  font-family:var(--font-body, 'Inter', sans-serif);
+  font-weight:700;font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  padding:14px 32px;
+  border-radius:6px;
+  border:none;cursor:pointer;
+  transition:all 0.25s ease;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.quote-modal-btn.success{
+  background:#FF6B00;color:#050B18;
+}
+.quote-modal-btn.success:hover{
+  background:#FF8C33;transform:translateY(-1px);
+  box-shadow:0 8px 25px rgba(255,107,0,0.4);
+}
+.quote-modal-btn.error{
+  background:transparent;color:#EF4444;
+  border:1px solid rgba(239,68,68,0.3);
+}
+.quote-modal-btn.error:hover{
+  background:rgba(239,68,68,0.1);transform:translateY(-1px);
+}
+
+/* Auto-close timer bar */
+.quote-modal-timer{
+  position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:rgba(255,107,0,0.15);
+  overflow:hidden;
+}
+.quote-modal-timer-bar{
+  height:100%;width:100%;
+  background:linear-gradient(90deg,#FF6B00,#FF8C33);
+  transform-origin:left;
+  animation:timerShrink 5s linear forwards;
+}
+@keyframes timerShrink{
+  0%{transform:scaleX(1)}
+  100%{transform:scaleX(0)}
+}
+
+/* Close X button */
+.quote-modal-close{
+  position:absolute;top:16px;right:16px;
+  width:32px;height:32px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+  color:rgba(255,255,255,0.4);
+  font-size:16px;
+  transition:all 0.2s ease;
+}
+.quote-modal-close:hover{
+  background:rgba(255,107,0,0.15);
+  border-color:rgba(255,107,0,0.3);
+  color:#FF6B00;
+}
+
+/* Form validation highlight */
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group textarea.invalid{
+  border-color:#EF4444 !important;
+  box-shadow:0 0 0 2px rgba(239,68,68,0.15);
+}
+.form-group .field-error{
+  font-size:11px;color:#EF4444;
+  margin-top:4px;font-weight:500;
+  font-family:var(--font-body, 'Inter', sans-serif);
+}
+
+/* Submit button loading state */
+.btn-submit.loading{
+  pointer-events:none;opacity:0.7;
+}
+.btn-submit.loading::after{
+  content:'';display:inline-block;
+  width:16px;height:16px;
+  border:2px solid transparent;
+  border-top-color:currentColor;
+  border-radius:50%;
+  animation:spin 0.6s linear infinite;
+  margin-left:8px;
+  vertical-align:middle;
+}
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
+
+/* ── Responsive ── */
+@media(max-width:540px){
+  .quote-modal{padding:36px 24px;border-radius:12px}
+  .quote-modal-title{font-size:22px}
+  .quote-modal-subtitle{font-size:14px}
+  .quote-modal-message{font-size:13px}
+  .quote-modal-icon{width:64px;height:64px;font-size:28px}
+  .quote-modal-btn{padding:12px 24px;font-size:12px}
+}

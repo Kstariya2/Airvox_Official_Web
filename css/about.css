@@ -1,0 +1,65 @@
+/* ═══════════════════════════════════════════
+   ABOUT SECTION + ORBIT ANIMATIONS + CAROUSEL
+   ═══════════════════════════════════════════ */
+#about{background:var(--navy-dark);overflow:hidden;position:relative}
+
+/* --- ABOUT BACKGROUND ANIMATIONS --- */
+.about-bg-anim{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.about-bg-anim *{position:absolute}
+
+/* Orbit Rings */
+.orbit-ring{border-radius:50%;border:1px solid rgba(255,107,0,0.06)}
+.orbit-ring-1{width:500px;height:500px;top:50%;left:60%;transform:translate(-50%,-50%);animation:orbitSpin 40s linear infinite}
+.orbit-ring-2{width:350px;height:350px;top:50%;left:60%;transform:translate(-50%,-50%);border:1px dashed rgba(255,107,0,0.08);animation:orbitSpin 28s linear infinite reverse}
+.orbit-ring-3{width:220px;height:220px;top:50%;left:60%;transform:translate(-50%,-50%);border:1px solid rgba(255,107,0,0.04);animation:orbitSpin 18s linear infinite}
+@keyframes orbitSpin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+
+/* Orbiting Planes */
+.orbit-plane{filter:drop-shadow(0 0 8px rgba(255,107,0,0.5))}
+.orbit-plane-1{top:50%;left:60%;animation:orbitPlane1 28s linear infinite;transform-origin:0 0}
+.orbit-plane-2{top:50%;left:60%;animation:orbitPlane2 40s linear infinite;transform-origin:0 0;opacity:0.6}
+@keyframes orbitPlane1{
+  0%{transform:rotate(0deg) translateX(175px) rotate(0deg)}
+  100%{transform:rotate(360deg) translateX(175px) rotate(-360deg)}
+}
+@keyframes orbitPlane2{
+  0%{transform:rotate(0deg) translateX(250px) rotate(0deg)}
+  100%{transform:rotate(-360deg) translateX(250px) rotate(360deg)}
+}
+
+/* Flight Paths */
+.about-flight-paths{position:absolute;inset:0;width:100%;height:100%;opacity:0.8}
+
+/* Floating Particles */
+.about-particles{position:absolute;inset:0}
+.about-particles .a-particle{position:absolute;width:2px;height:2px;border-radius:50%;animation:floatParticle linear infinite}
+
+/* Subtle Radial Glow */
+.about-glow{position:absolute;width:100%;height:100%;top:0;left:0;background:radial-gradient(ellipse at 60% 50%,rgba(255,107,0,0.04) 0%,transparent 55%);pointer-events:none}
+
+/* About Grid */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:60px;align-items:center;position:relative;z-index:1}
+#about .section-center{position:relative;z-index:1}
+.about-text p{font-family:var(--font-body);font-weight:400;font-size:1rem;color:var(--white-dim);line-height:1.8;margin-bottom:20px}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.about-feature{display:flex;align-items:start;gap:12px}
+.about-feature .feat-icon{width:32px;height:32px;border-radius:6px;background:rgba(255,107,0,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.about-feature .feat-icon svg{width:16px;height:16px;fill:var(--orange-primary)}
+.about-feature h5{font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--white-primary)}
+.about-feature p{font-family:var(--font-body);font-size:0.8rem;color:var(--white-dim);margin-top:2px}
+.about-image{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80') center/cover}
+.about-image::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(5,11,24,0.6),transparent)}
+
+/* --- ABOUT CAROUSEL --- */
+.about-carousel{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/3}
+.carousel-track{position:relative;width:100%;height:100%}
+.carousel-slide{position:absolute;inset:0;opacity:0;transition:opacity 0.8s ease;pointer-events:none}
+.carousel-slide.active{opacity:1;pointer-events:all}
+.carousel-slide img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.carousel-slide .slide-caption{position:absolute;bottom:0;left:0;right:0;padding:16px 20px;background:linear-gradient(transparent,rgba(5,11,24,0.85));font-family:var(--font-tech);font-weight:600;font-size:13px;letter-spacing:0.12em;color:var(--white-primary);text-transform:uppercase;border-radius:0 0 8px 8px}
+.carousel-controls{position:absolute;bottom:16px;right:16px;display:flex;align-items:center;gap:8px;z-index:2}
+.carousel-btn{width:32px;height:32px;border-radius:50%;background:rgba(5,11,24,0.7);border:1px solid rgba(255,107,0,0.3);color:var(--orange-primary);font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s ease;backdrop-filter:blur(8px)}
+.carousel-btn:hover{background:var(--orange-primary);color:var(--navy-deepest);border-color:var(--orange-primary)}
+.carousel-dots{display:flex;gap:6px}
+.carousel-dots .c-dot{width:6px;height:6px;border-radius:50%;background:rgba(248,250,252,0.3);transition:all 0.3s ease;cursor:pointer}
+.carousel-dots .c-dot.active{background:var(--orange-primary);box-shadow:0 0 6px var(--orange-primary);width:18px;border-radius:3px}
